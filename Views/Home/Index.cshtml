@@ -1,0 +1,39 @@
+﻿@model List<HW25_20_05_2020.Models.Person>
+
+<style>
+    th {
+        text-align: center;
+    }
+</style>
+
+
+<table class="table table-bordered" style="text-align:center">
+    <thead>
+        <tr>
+            <th>
+                ID
+            </th>
+            <th>
+                LastName
+            </th>
+            <th>
+                FirstName
+            </th>
+            <th>
+                MiddleName
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.LastName</td>
+                <td>@item.FirstName</td>
+                <td>@item.MiddleName</td>
+            </tr>
+
+        }
+    </tbody>
+</table>
